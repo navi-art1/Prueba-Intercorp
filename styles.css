@@ -4,10 +4,22 @@
   font-family: sans-serif;
 }
 .header {
-  height: 40px;
+  height: 60px; 
   width: 100%;
   background-color: #ff6e00;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0;
 }
+
+.header img {
+  height: 70px; 
+  width: auto; 
+  object-fit: contain; 
+  cursor: pointer;
+}
+
 
 .main {
   display: flex;
@@ -359,8 +371,22 @@ button:active {
 
 .firstCard_containerDescription {
   width: 400px;
-  margin: 18px;
+  margin: 10px;
+  height: 100px;
+  overflow: auto; /* Permite el scroll */
 }
+
+/* Esconde la scrollbar en WebKit (Chrome, Safari) */
+.firstCard_containerDescription::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Esconde la scrollbar en Firefox */
+.firstCard_containerDescription {
+  scrollbar-width: none; /* Oculta la scrollbar en Firefox */
+}
+
 
 .firstCard_containerText-pricebase {
   color: #ff6e00;

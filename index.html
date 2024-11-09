@@ -21,11 +21,17 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body class="main-body">
-    <header class="header"></header>
+    <header class="header">
+      <a href="index.html">
+        <img
+          src="https://servicios2.promart.pe/img/logo-promart.cd6954d2.png"
+          alt="Promart"
+        />
+      </a>
+    </header>
 
     <main class="main">
       <h1 class="main-title">Consulta de Producto</h1>
-
 
       <form id="searchForm">
         <input
@@ -36,33 +42,32 @@
         />
         <button type="submit">Consultar</button>
       </form>
-      
 
       <div id="productoNoEncontrado" class="productoNoEncontrado">
         <div class="search-result-message">
           <span id="searchResultText">
-            <strong>Lo sentimos</strong>, no encontramos ningún resultado para: 
-            <span id="qskuResult">SKU</span>. 
-            <span class="suggestion">Por favor, intenta con otro código o verifica el número ingresado.</span>
+            <strong>Lo sentimos</strong>, no encontramos ningún resultado para:
+            <span id="qskuResult">SKU</span>.
+            <span class="suggestion"
+              >Por favor, intenta con otro código o verifica el número
+              ingresado.</span
+            >
           </span>
         </div>
-
       </div>
 
       <div id="productoEncontrado" class="productoEncontrado">
         <span id="searchResultText">
-          Resultado para la búsqueda: 
+          Resultado para la búsqueda:
           <span id="skuResult">SKU</span>
         </span>
-        
 
-        <div class="container_category" >
-          <span  class="productoEncontrado_category" id="category">
+        <div class="container_category">
+          <span class="productoEncontrado_category" id="category">
             Categoría
           </span>
-  
         </div>
-       
+
         <div id="productCard" class="productoEncontrado_card">
           <div class="productoEncontrado_card--image">
             <img id="productImage" alt="Product Image" />
@@ -71,8 +76,12 @@
             >Title</span
           >
           <div class="productoEncontrado_card--div">
-            <span id="productBrand" class="productoEncontrado_card--small-text">Brand</span>
-            <span id="productSku" class="productoEncontrado_card--small-text">SKU: sku</span>
+            <span id="productBrand" class="productoEncontrado_card--small-text"
+              >Brand</span
+            >
+            <span id="productSku" class="productoEncontrado_card--small-text"
+              >SKU: sku</span
+            >
           </div>
           <span id="productPrice" class="productoEncontrado_card--price"
             >S/. Precio</span
