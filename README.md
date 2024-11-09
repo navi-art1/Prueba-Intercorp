@@ -1,5 +1,18 @@
 # Desafío Técnico - Desarrollador Web VTEX
 
+
+# Video demostrativo del software
+
+<video width="600" controls>
+  <source src="assets/Demo del software.mp4" type="video/mp4">
+  Tu navegador no soporta el formato de video.
+</video>
+
+# Deploy del software
+
+
+Puedes ver el despliegue del software en el siguiente enlace: [Ver Deploy](https://prueba-tecnica-intercorp.web.app/)
+
 ## Descripción del Proyecto
 
 Este proyecto consiste en la creación de una aplicación web utilizando JavaScript para realizar consultas de productos mediante un código SKU. La aplicación incluye dos vistas principales:
