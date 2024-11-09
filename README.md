@@ -8,6 +8,8 @@
   Tu navegador no soporta el formato de video.
 </video>
 
+En caso no se pueda visualizar el video demostrativo este se encuentra en la carpeta assets
+
 # Deploy del software
 
 
