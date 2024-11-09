@@ -1,127 +1,94 @@
-<div
-  style="
-    border: 1px solid black;
-    width: 100%;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  "
->
-  <div
-    class="CARD"
-    style="
-      width: 480px;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 16px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    "
-  >
-    <div
-      style="
-        width: 420px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 24px;
-      "
-    >
-      <span style="font-size: 24px; font-weight: bold">Detail</span>
-      <div
-        style="
-          width: 24px;
-          height: 24px;
-          background: black;
-          border-radius: 4px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        "
-      >
-        <i style="color: white; font-weight: bold" class="fa-solid fa-x"></i>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ffc9e3cecc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="main-body">
+    <header class="header"></header>
+
+    <div class="containertitle">
+      <h1 class="title">Detalles</h1>
+      <a style="text-decoration: none;" href="index.html" class="button" >Atrás</a>
     </div>
 
-    <span
-      style="
-        color: #ff6e00;
-        font-size: 32px;
-        font-weight: bold;
-        margin-top: 12px;
-      "
-    >
-      Title
-    </span>
+    <main class="mainProduct">
+      <!--------------------------------------------------------------------------------------->
 
-    <div
-      class="Image"
-      style="
-        aspect-ratio: 1;
-        width: 420px;
-        border: 1px solid black;
-        border-radius: 12px;
-        margin-top: 12px;
-        margin-bottom: 24px;
-      "
-    ></div>
+      <div class="firstCard">
+        <div class="firstCard_containerTitle">
+          <span id="productTitle" class="firstCard_title">Title</span>
 
-    <div
-      style="
-        width: 420px;
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 24px;
-      "
-    >
-      <span style="font-size: 28px; font-weight: bold; text-align: start">
-        SKU
-      </span>
+          <span id="productCategory" class="firstCard_category">Category</span>
+        </div>
 
-      <div
-        style="
-          width: 420px;
-          font-size: 16px;
-          display: flex;
-          justify-content: space-between;
-          margin-top: 12px;
-        "
-      >
-        <span style="font-size: 24px">Brand</span>
-        <span style="font-size: 24px">Category</span>
+        <div id="productImageContainer" class="firstCard_container">
+          <img
+            id="productImage"
+            class="firstCard_container-image"
+            src=""
+            alt="Imagen del Producto"
+          />
+        </div>
+
+        <div class="firstCard_containerText">
+          <span class="firstCard_containerText--smallText" id="productBrand"
+            >Brand</span
+          >
+          <span class="firstCard_containerText--smallText" id="productSku"
+            >SKU:
+          </span>
+        </div>
+
+        <div class="firstCard_containerDescription">
+          <span id="productDescription">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis molestias voluptatibus sunt temporibus minus esse
+            explicabo quia, magnam ea maiores eos, iusto alias, at nulla
+            deserunt tempora? Dolor, esse iure!
+          </span>
+        </div>
+
+        <div class="firstCard_containerText">
+          <span id="productListPrice"> S/. Precio Lista </span>
+
+          <span class="firstCard_containerText-pricebase" id="productBasePrice"
+            >S/. Precio Base</span
+          >
+        </div>
       </div>
 
-      <span style="margin-top: 18px">
-        "Descripción" Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Sit quae veritatis iure necessitatibus! Dolorem minus iusto quibusdam
-        corrupti, animi adipisci omnis est sed illo? Deleniti voluptas
-        exercitationem tempora dolorum iste?
-      </span>
+      <!--------------------------------------------------------------------------------------->
 
-      <div
-        style="
-          width: 420px;
-          font-size: 16px;
-          display: flex;
-          justify-content: space-between;
-          margin-top: 12px;
-          border: 1px solid black;
-          align-items: center;
-        "
-      >
-        <span style="font-size: 20px">S/. Precio</span>
-        <span style="font-size: 28px; font-weight: bold; color: #ff6e00"
-          >S/. Precio</span
-        >
+      <div class="secondCard">
+        <h1 class="secondCard_title">Ficha Técnica</h1>
+
+        <div class="ficha" style="width: 900px">
+          <div
+            id="productDetails"
+            style="
+              width: 100%;
+              margin: 0 auto;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              overflow: hidden;
+            "
+          >
+            <!-- Contenido de la tabla (se llenará dinámicamente) -->
+            <div id="productProperties" class="tableContent">
+              <!-- Las propiedades se agregarán aquí -->
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+    </main>
+
+    <script src="product.js"></script>
+  </body>
+</html>
